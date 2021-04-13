@@ -26,5 +26,6 @@ cc_binary(
     deps = [
         ":hello_lib",
         "@com_github_gflags_gflags//:gflags",
+        "@com_github_google_glog//:glog",
     ],
 )
