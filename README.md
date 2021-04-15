@@ -1,8 +1,8 @@
 # xoogle3
 
-Bazel workspace for C++ with some batteries included, intended to help folks
-who would like to use C++ in programming assignments (e.g. coursework,
-interviews).
+[Bazel](https://bazel.build/) workspace for C++ with some batteries included,
+intended to help folks who would like to use C++ in programming assignments
+(e.g. coursework, interviews).
 
 ## Libraries
 
