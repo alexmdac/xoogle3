@@ -1,0 +1,7 @@
+FROM dazel/dazel:latest
+
+# We need to install git ourselves to make `git_repository` work.
+# See https://github.com/nadirizr/dazel/pull/60
+RUN apt-get update \
+  && apt-get install -y git \
+  && rm -rf /var/lib/apt/lists/*

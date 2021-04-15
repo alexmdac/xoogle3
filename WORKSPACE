@@ -63,3 +63,20 @@ new_git_repository(
   shallow_since = "1596714569 +0200",
   build_file_content = NLOHMANN_JSON_BUILD_FILE_CONTENT,
 )
+
+# https://github.com/yhirose/cpp-httplib/tree/v0.8.6
+YHIROSE_CPP_HTTPLIB_BUILD_FILE_CONTENT = """
+cc_library(
+  name = "httplib",
+  hdrs = ["httplib.h"],
+  include_prefix = "yhirose/httplib",
+  visibility = ["//visibility:public"],
+)
+"""
+new_git_repository(
+  name = "com_github_yhirose_cpp_httplib",
+  remote = "https://github.com/yhirose/cpp-httplib",
+  commit = "faa5f1d8023746a3da9f275c51867ded2a672ee9",
+  shallow_since = "1617653621 -0400",
+  build_file_content = YHIROSE_CPP_HTTPLIB_BUILD_FILE_CONTENT,
+)
