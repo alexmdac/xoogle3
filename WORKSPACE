@@ -5,7 +5,8 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 git_repository(
     name = "com_github_gflags_gflags",
     remote = "https://github.com/gflags/gflags.git",
-    tag = "v2.2.2"
+    commit = "e171aa2d15ed9eb17054558e0b3a6a413bb01067",
+    shallow_since = "1541971260 +0000",
 )
 
 # https://github.com/google/glog
@@ -21,6 +22,7 @@ http_archive(
   name = "com_google_absl",
   urls = ["https://github.com/abseil/abseil-cpp/archive/98eb410c93ad059f9bba1bf43f5bb916fc92a5ea.zip"],
   strip_prefix = "abseil-cpp-98eb410c93ad059f9bba1bf43f5bb916fc92a5ea",
+  sha256 = "aabf6c57e3834f8dc3873a927f37eaf69975d4b28117fc7427dfb1c661542a87",
 )
 
 # Needed for abseil
@@ -28,6 +30,7 @@ http_archive(
   name = "rules_cc",
   urls = ["https://github.com/bazelbuild/rules_cc/archive/262ebec3c2296296526740db4aefce68c80de7fa.zip"],
   strip_prefix = "rules_cc-262ebec3c2296296526740db4aefce68c80de7fa",
+  sha256 = "9a446e9dd9c1bb180c86977a8dc1e9e659550ae732ae58bd2e8fd51e15b2c91d",
 )
 
 # https://github.com/google/googletest
@@ -56,6 +59,7 @@ cc_library(
 new_git_repository(
   name = "com_github_nlohmann_json",
   remote = "https://github.com/nlohmann/json",
-  tag = "v3.9.1",
+  commit = "db78ac1d7716f56fc9f1b030b715f872f93964e4",
+  shallow_since = "1596714569 +0200",
   build_file_content = NLOHMANN_JSON_BUILD_FILE_CONTENT,
 )
