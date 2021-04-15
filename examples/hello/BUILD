@@ -5,19 +5,19 @@ cc_library(
     srcs = ["hello.cc"],
     hdrs = ["hello.h"],
     deps = [
-        "@com_google_absl//absl/strings",
         "@com_github_nlohmann_json//:json",
+        "@com_google_absl//absl/strings",
     ],
 )
 
 cc_test(
-  name = "hello_test",
-  size = "small",
-  srcs = ["hello_test.cc"],
-  deps = [
-      ":hello_lib",
-      "@com_google_googletest//:gtest_main",
-  ],
+    name = "hello_test",
+    size = "small",
+    srcs = ["hello_test.cc"],
+    deps = [
+        ":hello_lib",
+        "@com_google_googletest//:gtest_main",
+    ],
 )
 
 cc_binary(

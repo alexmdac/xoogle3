@@ -1,5 +1,6 @@
-#include "absl/strings/str_cat.h"
 #include "examples/hello/hello.h"
+
+#include "absl/strings/str_cat.h"
 #include "nlohmann/json.hpp"
 
 std::string GetGreeting(const std::string& whom) {

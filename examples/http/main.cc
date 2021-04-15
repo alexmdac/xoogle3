@@ -5,7 +5,7 @@
 DEFINE_string(host, "0.0.0.0", "server host");
 DEFINE_int32(port, 8080, "server port");
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
   gflags::ParseCommandLineFlags(&argc, &argv, true);
   google::InitGoogleLogging(argv[0]);
 

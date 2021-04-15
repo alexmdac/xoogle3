@@ -1,4 +1,5 @@
 #include "examples/hello/hello.h"
+
 #include "gtest/gtest.h"
 
 TEST(GetGreetingTest, ReturnsGreeting) {
