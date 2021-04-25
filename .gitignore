@@ -1,2 +1,3 @@
 /bazel-*
 .dazel_run
+.vscode
