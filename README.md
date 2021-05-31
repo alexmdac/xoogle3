@@ -18,6 +18,8 @@ intended to help folks who would like to use C++ for programming assignments
 $ bazel run //examples/hello -- --logtostderr
 ```
 
+## Dazel
+
 You can also use [dazel](https://github.com/nadirizr/dazel) to run the examples
 in a container. The repo contains a `.dazelrc` file that will map port `8080`.
 This is useful for testing network servers.
