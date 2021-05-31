@@ -19,7 +19,7 @@ $ bazel run //examples/hello -- --logtostderr
 ```
 
 You can also use [dazel](https://github.com/nadirizr/dazel) to run the examples
-in a container. The repo contains a `.bazelrc` file that will map port `8080`.
+in a container. The repo contains a `.dazelrc` file that will map port `8080`.
 This is useful for testing network servers.
 
 ```
